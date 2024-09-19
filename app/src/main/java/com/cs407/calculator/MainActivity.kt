@@ -98,7 +98,6 @@ class MainActivity : AppCompatActivity() {
                 } else {
                     val solution = number1 / number2
 
-
                     val intent = Intent(this, ResultActivity::class.java)
                     intent.putExtra("EXTRA_RESULT", solution)
                     startActivity(intent)

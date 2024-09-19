@@ -20,6 +20,7 @@ class ResultActivity : AppCompatActivity() {
             insets
         }
 
+
         val result = intent.getFloatExtra("EXTRA_RESULT", 0f)
         val resultTextView = findViewById<TextView>(R.id.resultTextView)
         resultTextView.text = String.format("Result: %d", result)

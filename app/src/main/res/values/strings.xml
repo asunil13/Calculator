@@ -8,4 +8,5 @@
     <string name="multiply">*</string>
     <string name="divide">/</string>
     <string name="result_will_be_displayed_here">result</string>
+
 </resources>
