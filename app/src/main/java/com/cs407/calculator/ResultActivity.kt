@@ -21,7 +21,7 @@ class ResultActivity : AppCompatActivity() {
         }
 
 
-        val result = intent.getFloatExtra("EXTRA_RESULT", 0f)
+        val result = intent.getIntExtra("EXTRA_RESULT", 0)
         val resultTextView = findViewById<TextView>(R.id.resultTextView)
         resultTextView.text = String.format("Result: %d", result)
 

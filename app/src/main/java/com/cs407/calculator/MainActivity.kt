@@ -31,8 +31,8 @@ class MainActivity : AppCompatActivity() {
 
         additionButton.setOnClickListener {
             if (num_one.text.isNotEmpty() && num_two.text.isNotEmpty()) {
-                val number1 = num_one.text.toString().toFloat()
-                val number2 = num_two.text.toString().toFloat()
+                val number1 = num_one.text.toString().toInt()
+                val number2 = num_two.text.toString().toInt()
                 val solution = number1 + number2
 
 
@@ -51,8 +51,8 @@ class MainActivity : AppCompatActivity() {
 
         subtractButton.setOnClickListener {
             if (num_one.text.isNotEmpty() && num_two.text.isNotEmpty()) {
-                val number1 = num_one.text.toString().toFloat()
-                val number2 = num_two.text.toString().toFloat()
+                val number1 = num_one.text.toString().toInt()
+                val number2 = num_two.text.toString().toInt()
                 val solution = number1 - number2
 
 
@@ -69,8 +69,8 @@ class MainActivity : AppCompatActivity() {
 
         multiplyButton.setOnClickListener {
             if (num_one.text.isNotEmpty() && num_two.text.isNotEmpty()) {
-                val number1 = num_one.text.toString().toFloat()
-                val number2 = num_two.text.toString().toFloat()
+                val number1 = num_one.text.toString().toInt()
+                val number2 = num_two.text.toString().toInt()
                 val solution = number1 * number2
 
 
@@ -89,11 +89,11 @@ class MainActivity : AppCompatActivity() {
 
         divideButton.setOnClickListener {
             if (num_one.text.isNotEmpty() && num_two.text.isNotEmpty()) {
-                val number1 = num_one.text.toString().toFloat()
-                val number2 = num_two.text.toString().toFloat()
+                val number1 = num_one.text.toString().toInt()
+                val number2 = num_two.text.toString().toInt()
 
 
-                if (number2 == 0f) {
+                if (number2 == 0) {
                     Toast.makeText(this, "Cannot divide by zero", Toast.LENGTH_SHORT).show()
                 } else {
                     val solution = number1 / number2
